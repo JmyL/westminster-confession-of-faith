@@ -6,4 +6,4 @@
 
 doc/test.md
 
-![Example Image](/image/6000클럭산포.png)
+![Example Image](./image/6000클럭산포.png)
