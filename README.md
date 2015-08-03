@@ -4,6 +4,6 @@
 
 ...
 
-[[doc/test]]
+[[test]]
 
 ![Example Image](./image/6000클럭산포.png)
