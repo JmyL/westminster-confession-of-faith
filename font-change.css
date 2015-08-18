@@ -1,0 +1,9 @@
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+.reveal {font-family: 'Jeju Gothic' 'Source Sans Pro', Helvetica, sans-serif;}
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-family: 'Jeju Gothic' 'Source Sans Pro', Helvetica, sans-serif;
+}
+.reveal h1 {
+  font-size: 2.0em; }
+strong {
+  color: DarkRed;}
