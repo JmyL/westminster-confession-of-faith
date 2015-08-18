@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Repo 관리방안</title>
+
+<meta name="description" content="Repo 관리방안">    
+
+  <meta name="author" content="Sungsik Nam" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="reveal.js/css/reveal.min.css">
+  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+
+<link rel="stylesheet" href="font-change.css">
+
+<!-- For syntax highlighting -->
+  <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+  document.write( '<link rel="stylesheet" href="reveal.js/css/print/' +
+    ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + 
+    '.css" type="text/css" media="print">' );
+</script>
+
+<!--[if lt IE 9]>
+<script src="reveal.js/lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<section>
+<h1>Repo 관리방안</h1>
+<h3>Sungsik Nam</h3>
+<p>
+<h4>2015-08-17</h4>
+</p>
+</section>  
+
+
+<section><section id="development-withyobi-git" class="titleslide slide level1"><h1>Development With<br />Yobi &amp; Git</h1></section><section id="centralized-workflow" class="slide level2">
+<h1>Centralized Workflow?</h1>
+<ul>
+<li>Centralized Version Control System(e.g. SVN)을 활용한 버전관리 방법.</li>
+<li>서버에 push하려는데 다른 사람이 먼저 push한 내용이 있다면? 내려받아서 merge &amp; resolve한 후, 단일 history로 서버에 업데이트.</li>
+<li>Repository에는 branch 없이 단일 stream이 기록됨.</li>
+</ul>
+</section><section id="why-forking-workflow" class="slide level2">
+<h1>Why Forking Workflow?</h1>
+<blockquote>
+<p>&quot;First, it gives every developer their own local copy of the entire project. This isolated environment <strong>lets each developer work independently</strong> of all other changes to a project—they can add commits to their local repository and <strong>completely forget about upstream developments</strong> until it's convenient for them.&quot;</p>
+</blockquote>
+</section><section class="slide level2">
+
+<blockquote>
+<p>Second, it gives you access to Git’s robust branching and merging model. Unlike SVN, Git branches are designed to be a fail-safe mechanism for <strong>integrating code</strong> and <strong>sharing changes</strong> between repositories.&quot;</p>
+</blockquote>
+<p>출처: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Comparing Workflows</a></p>
+</section><section id="yobi" class="slide level2">
+<h1>Yobi!</h1>
+<ul>
+<li>Git을 사용하면서도 centralized workflow로 개발하면 distributed version control system(이하 DVCS)의 장점을 활용하지 못함.</li>
+<li>Yobi를 이용해서 <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">Forking Workflow</a>로 개발!</li>
+<li>Github와 동일한 방식으로 구현됨<br /> (Fork:코드 저장소 복사, pull-request: 코드 주고받기)</li>
+</ul>
+</section></section>
+<section><section id="sw개발그룹" class="titleslide slide level1"><h1>S/W개발그룹</h1></section><section id="sw개발그룹에서-주로-하는-작업은..." class="slide level2">
+<h1>S/W개발그룹에서<br /> 주로 하는 작업은...</h1>
+<ul>
+<li>모델 튜닝</li>
+<li>모델 별 방어코드 개발</li>
+<li>코어에 반영해야하는 알고리듬 개발 - 특히 S/W 2파트!<br /> (마지막 항목의 경우, platform 개발그룹과 동일한 방법으로 개발하면 됩니다.)</li>
+</ul>
+</section><section id="with-review" class="slide level2">
+<h1>With Review</h1>
+<p>개발에 여러사람이 참여하거나 관리자가 리뷰하는 경우,</p>
+<ul>
+<li>Core repo를 <strong>sw_maintainer group 소유로</strong> fork해서 model repo 생성.</li>
+<li><strong>개발자는</strong> 해당 model repo를 개별적으로 fork해서 <strong>비공개 프로젝트를 만든 후 개발.</strong> 추가 참여자도 마찬가지.</li>
+<li>개인 비공개 project에는 자유롭게 push할 수 있음.</li>
+<li><strong>모든 기능은 branch를 생성해서</strong> 개발하고, 완료되면 push하여 '코드 주고받기'를 통해 sw_maintainer group 소유의 repo에 반영 요청.</li>
+<li>Maintainer가 리뷰하고, comment한 내용이 모두 수정된 시점에 반영.</li>
+</ul>
+</section><section id="without-review" class="slide level2">
+<h1>Without Review</h1>
+<p>혼자서 개발하고 관리자로부터 리뷰받지 않는 경우,</p>
+<ul>
+<li>Core repo를 개별적으로 fork해서 <strong>비공개 프로젝트를 만든 후 개발.</strong></li>
+<li>개인 비공개 project에는 자유롭게 push할 수 있음.</li>
+</ul>
+</section></section>
+<section><section id="platform개발그룹" class="titleslide slide level1"><h1>Platform개발그룹</h1></section><section id="플랫폼그룹에서-주로-작업하는-내용은..." class="slide level2">
+<h1>플랫폼그룹에서<br /> 주로 작업하는 내용은...</h1>
+<ul>
+<li><a href="#/algorithm">알고리듬 개발</a></li>
+<li><a href="#/ic-cores">각 IC별 Core 개발</a></li>
+<li><a href="#/researches">선행솔루션 개발</a></li>
+</ul>
+<aside class="notes">
+<p>노트 테스트 ;)</p>
+</aside>
+</section><section id="algorithm" class="slide level2">
+<h1>알고리듬 개발</h1>
+<p>Q: 어떤 IC로?</p>
+<div class="fragment">
+<ul>
+<li><strong>가장 활발하게 성능 개선이 진행되고 있는 IC에서</strong> 개발해야 함.</li>
+<li>Incell은 알고리듬 개발에 투입할 인력 여력이 없으니 배제.</li>
+<li>현재는 mutual의 경우 mms400-core repo의 __mms-458 branch__에서 가장 활발하게 개발되고 있음.</li>
+<li>Hybrid IC가 mainstream이 되면 500(mms500-core repo, master branch)이 알고리듬 개발 브랜치가 되어야 함.</li>
+</ul>
+</div>
+</section><section id="ic-cores" class="slide level2">
+<h1>각 IC별 Core 개발</h1>
+<ul>
+<li>각 Core에서 개발한 기능 중 다른 Core에 반영해야 할 내용이 있을 수 있으므로 연결된 tree로 관리하면 추후 머지가 용이함.</li>
+<li>위에서 정한 <strong>알고리듬 개발 repo를 fork해서 개발!</strong></li>
+<li>코어 릴리즈는 release branch 및 tag를 push하는 형태로 이루어집니다.</li>
+<li><strong>Release되지 않은 commit을 개발에 이용하지 않도록 각별히 주의가 필요합니다!</strong>(버전 관리가 되지 않아서 지원이 어려움)</li>
+</ul>
+</section><section id="researches" class="slide level2">
+<h1>선행솔루션 개발</h1>
+<ul>
+<li>선행솔루션 개발에 이용하는 IC repo를 fork해서 시작. Fork 시 <strong>프로젝트 이름 앞에 <code>dev_</code>를 붙이도록.</strong></li>
+<li>e.g. <code>dev_latency_improve</code></li>
+<li>선행솔루션 개발에 여러 IC가 사용될 수 있음. 이 때는 다른 IC의 repo를 위에서 생성한 repo에 push해서 개발.</li>
+</ul>
+</section><section id="project-소유자" class="slide level2">
+<h1>Project 소유자</h1>
+<ul>
+<li>platform_maintainer group을 만들어서 각 파트장들을 구성원으로 포함시켜 두었음.</li>
+<li>platform_maintainer 소유로 project를 만들고 그룹공개로 설정해서 <strong>파트장들이 코드의 반영 여부를 최종 승인할 수 있도록</strong> 했음.</li>
+<li>다른 platform member들은 참여자로 추가됨. 추가되어있지 않으면 요청 버튼을 눌러서 요청!</li>
+<li><strong>Core repo의 경우 S/W 개발에서 release branch를 확인해야 하므로 모두 참여자로 추가.</strong> 역시 추가되어있지 않으면 요청 버튼을 눌러서 요청!</li>
+</ul>
+</section><section id="branch-이름" class="slide level2">
+<h1>Branch 이름</h1>
+<p>아래 내용은 권장이지 강제는 아닙니다. 로컬 repo는 기본적으로 자기 마음대로~ 개발하셔도 됩니다.</p>
+<ul>
+<li><code>tuning_</code>: tuning parameter의 변경사항.</li>
+<li><code>core_</code>: 다른 IC에도 모두 반영되어야 하는 공통의 code change.</li>
+<li><code>$(platform)_</code>: 유사한 몇 개의 프로젝트를 포함하는 특정 'platform'에 해당하는 code change. e.g. mms400, lglargescr</li>
+<li><code>dev_</code>: 새로운 기능 개발.</li>
+<li><code>bugfix_</code>: 버그 수정.</li>
+</ul>
+</section></section>
+<section><section id="읽을거리..." class="titleslide slide level1"><h1>읽을거리...</h1></section><section class="slide level2">
+
+<ul>
+<li><a href="https://www.atlassian.com/git/tutorials/migrating-overview">SVN에서 Git으로 갈아타기</a></li>
+<li><a href="https://www.atlassian.com/git/tutorials/advanced-overview">Advanced Git Tutorials</a></li>
+</ul>
+</section></section>
+</div>
+
+<script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/js/reveal.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="word-break-keep-all/jquery.word-break-keep-all.min.js"></script>
+
+
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+  // available themes are in /css/theme
+      theme: Reveal.getQueryHash().theme || 'white', 
+    // default/cube/page/concave/zoom/linear/fade/none
+      transition: Reveal.getQueryHash().transition || 'slide',
+    // Optional libraries used to extend on reveal.js
+  dependencies: [
+    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+  });
+
+  jQuery(document).ready(function(){
+    // run
+    jQuery('h1').wordBreakKeepAll();
+  });
+</script>
+
+</body>
+</html>
