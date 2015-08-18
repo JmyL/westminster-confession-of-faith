@@ -1,4 +1,4 @@
-% Reveal.js로 build하는 방법 
+% Markdown으로 slideshow 만들기
 % Sungsik Nam
 % 2015-08-17
 
@@ -22,15 +22,17 @@ Yobi에서 문서 수정 가능.
 ## mardown file을 빌드
 
 ```
-build_md_for_reveal.js.bat repo_rules.md 
+build_md_for_reveal.js.bat readme.md 
 ```
 
 ## 결과물 확인
 
-* Chrome으로 repo_rules.html 파일을 열어서 결과물 확인
+* Chrome으로 readme.html 파일을 열어서 결과물 확인
 
 
+## Push!
 
+(작성중)
 
 # reveal.js 간단한 소개
 
