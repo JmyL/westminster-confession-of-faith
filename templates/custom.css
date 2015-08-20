@@ -31,6 +31,10 @@ strong {
     font-family: monospace;
 }
 
+.reveal pre code {
+  font-size: 1em;
+}
+
 /*.reveal ul{
 	margin-left: 0px;
 }*/
