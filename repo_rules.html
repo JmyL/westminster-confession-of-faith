@@ -17,12 +17,12 @@
 <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
   <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
 
-<link rel="stylesheet" href="font-change.css">
+<link rel="stylesheet" href="templates/custom.css">
 
 <!-- For syntax highlighting -->
   <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
-<link rel="stylesheet" href="mermaid.forest.css">
+<link rel="stylesheet" href="mermaid/mermaid.forest.css">
 
 <!-- If the query includes 'print-pdf', use the PDF print sheet -->
 <script>
@@ -30,6 +30,10 @@
     ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + 
     '.css" type="text/css" media="print">' );
 </script>
+
+<script src="mermaid/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
 
 <!--[if lt IE 9]>
 <script src="reveal.js/lib/js/html5shiv.js"></script>
@@ -47,21 +51,12 @@
 <h1>Repo 관리방안</h1>
 <h3>Sungsik Nam</h3>
 <p>
-<h4></h4>
+<h4>2015-08-17</h4>
 </p>
 </section>  
 
 
-<section class="slide level6">
-
-
-<div class="reveal">
-<div class="slides">
-<h1>Repo 관리방안</h1>
-<h3>Sungsik Nam</h3>
-<p></p>
-<h4>2015-08-17</h4>
- <section><section id="development-withyobi-git" class="titleslide slide level1"><h1>Development With<br />Yobi &amp; Git</h1></section><section id="centralized-workflow" class="slide level2">
+<section><section id="development-withyobi-git" class="titleslide slide level1"><h1>Development With<br />Yobi &amp; Git</h1></section><section id="centralized-workflow" class="slide level2">
 <h1>Centralized Workflow?</h1>
 <ul>
 <li>Centralized Version Control System(e.g. SVN)을 활용한 버전관리 방법.</li>
@@ -86,6 +81,17 @@
 <li>Yobi를 이용해서 <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">Forking Workflow</a>로 개발!</li>
 <li>Github와 동일한 방식으로 구현됨<br /> (Fork:코드 저장소 복사, pull-request: 코드 주고받기)</li>
 </ul>
+</section><section id="관련-글" class="slide level2">
+<h1>관련 글</h1>
+<ul>
+<li><a href="http://dev.melfas.com:9000/platform_g/doc-git-setting/posts">doc-git-setting project</a> 참조
+<ul>
+<li>tes</li>
+</ul></li>
+</ul>
+<figure>
+<img src="img/doc-git-setting.PNG" />
+</figure>
 </section></section>
 <section><section id="sw개발그룹" class="titleslide slide level1"><h1>S/W개발그룹</h1></section><section id="sw개발그룹에서-주로-하는-작업은..." class="slide level2">
 <h1>S/W개발그룹에서<br /> 주로 하는 작업은...</h1>
@@ -175,9 +181,6 @@
 </ul>
 </section></section>
 </div>
-</div>
-</section>
-</div>
 
 <script src="reveal.js/lib/js/head.min.js"></script>
 <script src="reveal.js/js/reveal.min.js"></script>
@@ -214,13 +217,8 @@
     // run
   
     jQuery('h1').wordBreakKeepAll();
-    jQuery('li').wordBreakKeepAll();  
   });
 </script>
-
-<script src="mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
-
 
 </body>
 </html>

@@ -8,3 +8,22 @@
 strong {
   color: DarkRed;}
 /*.path {stroke: #000000;}*/
+.reveal section img {
+    border: 2px solid #222;
+    margin-bottom: 0px;
+}
+
+.reveal figcaption {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;
+	font-size: .85em;
+}
+
+/*.reveal ul{
+	margin-left: 0px;
+}*/
+
+/*
+.label {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 4px;
+}*/

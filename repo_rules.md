@@ -27,7 +27,11 @@
 - Github와 동일한 방식으로 구현됨<br />
  (Fork:코드 저장소 복사, pull-request: 코드 주고받기)
 
+## 관련 글
 
+* [doc-git-setting project](http://dev.melfas.com:9000/platform_g/doc-git-setting/posts) 참조
+
+![](img/doc-git-setting.PNG)
 
 
 
