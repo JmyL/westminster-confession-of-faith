@@ -18,6 +18,10 @@ strong {
 	font-size: .85em;
 }
 
+.reveal h1 span {
+	font-size: 2.0em;
+}
+
 /*.reveal ul{
 	margin-left: 0px;
 }*/
