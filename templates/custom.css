@@ -18,7 +18,12 @@ strong {
 	font-size: .85em;
 }
 
-.reveal h1 span {
+
+.reveal .slide h1 span {
+	font-size: 1.8em;
+}
+
+.reveal .titleslide h1 span {
 	font-size: 2.0em;
 }
 
