@@ -4,7 +4,7 @@
   font-family: 'Jeju Gothic' 'Source Sans Pro', Helvetica, sans-serif;
 }
 .reveal h1 {
-  font-size: 2.0em; }
+  font-size: 1.0em; }
 strong {
   color: DarkRed;}
 /*.path {stroke: #000000;}*/
@@ -25,6 +25,10 @@ strong {
 
 .reveal .titleslide h1 span {
 	font-size: 2.0em;
+}
+
+.reveal code {
+    font-family: monospace;
 }
 
 /*.reveal ul{
