@@ -8,16 +8,35 @@
 
 * [Pandoc Homepage](http://pandoc.org/installing.html) 에서 Windows용 설치파일을 다운로드해서 설치.
 
+# 문서작성
+
+## 순서
+
+```mermaid
+graph LR
+	A[Square Rect] -- Link text --> B((Circle))
+    A --> C(Round Rect)
+    B --> D{Rhombus}
+    C --> D
+```
+
 ## 프로젝트 복사
 
 (작성중)
 
-# 문서 작성
 
 ## 문서 수정
 
 Yobi에서 문서 수정 가능.
 (작성중)
+
+```mermaid
+graph LR
+	A[Square Rect] -- Link text --> B((Circle))
+    A --> C(Round Rect)
+    B --> D{Rhombus}
+    C --> D
+```
 
 ## mardown file을 빌드
 

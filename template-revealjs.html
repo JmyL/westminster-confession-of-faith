@@ -7,9 +7,7 @@
 
 <meta name="description" content="$title$">    
 
-$for(author)$
   <meta name="author" content="$author$" />
-$endfor$
 
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -17,21 +15,14 @@ $endfor$
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <link rel="stylesheet" href="reveal.js/css/reveal.min.css">
-$if(theme)$
-  <link rel="stylesheet" href="reveal.js/css/theme/$theme$.css" id="theme">
-$else$
-  <link rel="stylesheet" href="reveal.js/css/theme/default.css" id="theme">
-$endif$
+  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
 
 <link rel="stylesheet" href="font-change.css">
 
 <!-- For syntax highlighting -->
-$if(highlight-style)$
-  <link rel="stylesheet" href="reveal.js/lib/css/$highlight-style$.css">
-$else$
   <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
-$endif$
 
+<link rel="stylesheet" href="mermaid/mermaid.forest.css">
 
 <!-- If the query includes 'print-pdf', use the PDF print sheet -->
 <script>
@@ -40,18 +31,16 @@ $endif$
     '.css" type="text/css" media="print">' );
 </script>
 
+<script src="mermaid/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+
 <!--[if lt IE 9]>
 <script src="reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
-$for(header-includes)$
-  $header-includes$
-$endfor$
 </head>
 
 <body>
-$for(include-before)$
-  $include-before$
-$endfor$
 
 <div class="reveal">
 
@@ -68,9 +57,9 @@ $for(author)$<h3>$author$</h3>$endfor$
 
 $if(toc)$
 <section>
-  <h2>Outline</h2>
+<h2>Outline</h2>
   <nav id="$idprefix$TOC">
-    $toc$
+$toc$
   </nav>
 </section>
 $endif$
@@ -84,28 +73,21 @@ $body$
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="word-break-keep-all/jquery.word-break-keep-all.min.js"></script>
 
-
 <script>
   // Full list of configuration options available here:
   // https://github.com/hakimel/reveal.js#configuration
   Reveal.initialize({
     controls: true,
     progress: true,
+    slideNumber: true,
     history: true,
     center: true,
+    viewDistance: 30000,
   // available themes are in /css/theme
-  $if(theme)$
-    theme: Reveal.getQueryHash().theme || '$theme$', 
-  $else$
-    theme: Reveal.getQueryHash().theme || 'default', 
-  $endif$
-  // default/cube/page/concave/zoom/linear/fade/none
-  $if(transition)$
-    transition: Reveal.getQueryHash().transition || '$transition$',
-  $else$
-    transition: Reveal.getQueryHash().transition || 'default',
-  $endif$
-  // Optional libraries used to extend on reveal.js
+      theme: Reveal.getQueryHash().theme || 'white', 
+    // default/cube/page/concave/zoom/linear/fade/none
+      transition: Reveal.getQueryHash().transition || 'zoom',
+    // Optional libraries used to extend on reveal.js
   dependencies: [
     { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
     { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -116,9 +98,9 @@ $body$
     // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
   ]
   });
-
   jQuery(document).ready(function(){
     // run
+  
     jQuery('h1').wordBreakKeepAll();
   });
 </script>

@@ -22,6 +22,7 @@
 <!-- For syntax highlighting -->
   <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
+<link rel="stylesheet" href="mermaid/mermaid.forest.css">
 
 <!-- If the query includes 'print-pdf', use the PDF print sheet -->
 <script>
@@ -29,6 +30,10 @@
     ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + 
     '.css" type="text/css" media="print">' );
 </script>
+
+<script src="mermaid/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
 
 <!--[if lt IE 9]>
 <script src="reveal.js/lib/js/html5shiv.js"></script>
@@ -56,13 +61,25 @@
 <ul>
 <li><a href="http://pandoc.org/installing.html">Pandoc Homepage</a> 에서 Windows용 설치파일을 다운로드해서 설치.</li>
 </ul>
+</section></section>
+<section><section id="문서작성" class="titleslide slide level1"><h1>문서작성</h1></section><section id="순서" class="slide level2">
+<h1>순서</h1>
+<div class="mermaid">graph LR
+    A[Square Rect] -- Link text --&gt; B((Circle))
+    A --&gt; C(Round Rect)
+    B --&gt; D{Rhombus}
+    C --&gt; D</div>
 </section><section id="프로젝트-복사" class="slide level2">
 <h1>프로젝트 복사</h1>
 <p>(작성중)</p>
-</section></section>
-<section><section id="문서-작성" class="titleslide slide level1"><h1>문서 작성</h1></section><section id="문서-수정" class="slide level2">
+</section><section id="문서-수정" class="slide level2">
 <h1>문서 수정</h1>
 <p>Yobi에서 문서 수정 가능. (작성중)</p>
+<div class="mermaid">graph LR
+    A[Square Rect] -- Link text --&gt; B((Circle))
+    A --&gt; C(Round Rect)
+    B --&gt; D{Rhombus}
+    C --&gt; D</div>
 </section><section id="mardown-file을-빌드" class="slide level2">
 <h1>mardown file을 빌드</h1>
 <pre><code>build_md_for_reveal.js.bat readme.md </code></pre>
@@ -99,15 +116,16 @@
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="word-break-keep-all/jquery.word-break-keep-all.min.js"></script>
 
-
 <script>
   // Full list of configuration options available here:
   // https://github.com/hakimel/reveal.js#configuration
   Reveal.initialize({
     controls: true,
     progress: true,
+    slideNumber: true,
     history: true,
     center: true,
+    viewDistance: 30000,
   // available themes are in /css/theme
       theme: Reveal.getQueryHash().theme || 'white', 
     // default/cube/page/concave/zoom/linear/fade/none
@@ -123,9 +141,9 @@
     // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
   ]
   });
-
   jQuery(document).ready(function(){
     // run
+  
     jQuery('h1').wordBreakKeepAll();
   });
 </script>
