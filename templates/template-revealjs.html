@@ -68,7 +68,6 @@ $body$
 
 
 <script src="reveal.js/lib/js/head.min.js"></script>
-<script src="reveal.js/plugin/mermaid/mermaid.js"></script>
 <link rel="stylesheet" href="mermaid/mermaid.forest.css">
 <script src="reveal.js/js/reveal.min.js"></script>
 
@@ -100,13 +99,13 @@ $body$
     // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 
     // MathJax
-    // ,{ src: 'reveal.js/plugin/math/math.js', async: true }
-    ,{ src: 'reveal.js/plugin/mermaid/mermaid.js', async: true }
+    ,{ src: 'reveal.js/plugin/math/math.js', async: true }
+    ,{ src: 'reveal.js/plugin/mermaid/mermaid.js', async: true, callback: function() {mermaid.init();} }
   ]
   });
   Reveal.addEventListener( 'slidechanged', function( event ) {
-    // MathJax.Hub.Rerender();
-    // mermaid.init();
+    MathJax.Hub.Rerender();
+    mermaid.init();
     // function loadjscssfile(filename, filetype){
     //     if (filetype=="js"){ //if filename is a external JavaScript file
     //         var fileref=document.createElement('script')
@@ -131,7 +130,6 @@ $body$
 
   jQuery(document).ready(function(){
     // run
-  
     jQuery('h1').wordBreakKeepAll();
   });
 </script>
