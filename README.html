@@ -20,11 +20,6 @@
 <!-- For syntax highlighting -->
   <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
 
-<link rel="stylesheet" href="mermaid/mermaid.forest.css">
-
-<script src="mermaid/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
-
 <link rel="stylesheet" href="templates/custom.css">
 
 
@@ -214,7 +209,10 @@
 </section></section>
 </div>
 
+
 <script src="reveal.js/lib/js/head.min.js"></script>
+<script src="reveal.js/plugin/mermaid/mermaid.js"></script>
+<link rel="stylesheet" href="mermaid/mermaid.forest.css">
 <script src="reveal.js/js/reveal.min.js"></script>
 
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -241,15 +239,16 @@
     { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
     { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
     { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
     // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 
     // MathJax
-    { src: 'reveal.js/plugin/math/math.js', async: true }
+    // ,{ src: 'reveal.js/plugin/math/math.js', async: true }
+    // ,{ src: 'mermaid/mermaid.min.js' }
   ]
   });
   Reveal.addEventListener( 'slidechanged', function( event ) {
-    MathJax.Hub.Rerender();
+    // MathJax.Hub.Rerender();
     // mermaid.init();
     // function loadjscssfile(filename, filetype){
     //     if (filetype=="js"){ //if filename is a external JavaScript file
