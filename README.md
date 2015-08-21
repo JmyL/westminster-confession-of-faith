@@ -172,6 +172,7 @@ gantt
 
 ## TODO
 
+* Web이랑 local이랑 다르게 보이는 현상 수정.
 * title slide 배경, font type, font 크기 등 변경.
 * li 등 일반 element에도 word-break 적용.
 * 한글 글씨 한개가 줄내림되는 현상 수정.
