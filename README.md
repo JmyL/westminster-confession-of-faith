@@ -16,6 +16,9 @@
 
 ![Anaconda Download Page](readme-img/anaconda.png)
 
+## Markdown 문서 편집기 Plug-in 설치
+* Eclipse->Help->Eclipse Marketplace...->Markdown 검색->Markdown Test Editor 1.2.0 Install
+
 # 문서작성
 
 ## 순서
