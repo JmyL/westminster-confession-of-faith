@@ -20,10 +20,12 @@
 * Eclipse->Help->Eclipse Marketplace...->Markdown 검색->Markdown Test Editor 1.2.0 Install
 * doc-git-setting Project 우클릭 -> Test file Encoding -> Other:UTF-8 선택 -> OK Click
 
-## Markdown Doc Build in Eclipse
-* doc-git-setting Project 우클릭 -> Builder 선택 -> New -> Program 선택 및 OK -> Location: ${workspace_loc:/doc-git-setting/scripts/build_md_for_reveal.js.bat} 입력 -> Working Directory: ${workspace_loc:/doc-git-setting/scripts} -> Arguments: ../${selected_resource_name}
+## Markdown Doc Build Setting in Eclipse
+* doc-git-setting Project 우클릭 -> Builder 선택 -> New -> Program 선택 및 OK -> Location: ${workspace_loc:/doc-git-setting/scripts/build_md_for_reveal.js.bat} 입력 -> Working Directory: ${workspace_loc:/doc-git-setting/scripts} -> Arguments: ../${selected_resource_name} -> OK
 
-* Build -> 문서 선택 -> OK
+## Markdown Doc Build
+* ctrl + B 
+  ※하지만 따로 세팅하지 않으면 Open된 모든 문서가 Build 됨 주위
 
 * Build Tip
 Eclipse key 설정에서 
