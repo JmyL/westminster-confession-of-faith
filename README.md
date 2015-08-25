@@ -28,7 +28,7 @@
 ## Markdown Doc Build
 ```mermaid
 * ctrl + B 
-  ※하지만 따로 세팅하지 않으면 Open된 모든 문서가 Build 됨 주위
+  ※하지만 따로 세팅하지 않으면 Open된 모든 Project가 Build 됨 주의
 ```
 
 ```mermaid
