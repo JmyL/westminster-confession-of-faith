@@ -21,19 +21,24 @@
 * doc-git-setting Project 우클릭 -> Test file Encoding -> Other:UTF-8 선택 -> OK Click
 
 ## Markdown Doc Build Setting in Eclipse
+```mermaid
 * doc-git-setting Project 우클릭 -> Builder 선택 -> New -> Program 선택 및 OK -> Location: ${workspace_loc:/doc-git-setting/scripts/build_md_for_reveal.js.bat} 입력 -> Working Directory: ${workspace_loc:/doc-git-setting/scripts} -> Arguments: ../${selected_resource_name} -> OK
+```
 
 ## Markdown Doc Build
+```mermaid
 * ctrl + B 
   ※하지만 따로 세팅하지 않으면 Open된 모든 문서가 Build 됨 주위
+```
 
+```mermaid
 * Build Tip
 Eclipse key 설정에서 
 Build All -> ctrl+B, A
 Build Project -> ctrl+B, B
 로 설정을 해두면
 Ctrl +B, B를 누르면 선택된 Project만 Build 가능
-		    
+```
 
 # 문서작성
 
