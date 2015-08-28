@@ -14,19 +14,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<link rel="stylesheet" href="reveal.js/css/reveal.min.css">
-  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+<link rel="stylesheet" href="../../reveal.js/css/reveal.min.css">
+  <link rel="stylesheet" href="../../reveal.js/css/theme/white.css" id="theme">
 
 <!-- For syntax highlighting -->
-  <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+  <link rel="stylesheet" href="../../reveal.js/lib/css/zenburn.css">
 
-<link rel="stylesheet" href="templates/custom.css">
+<link rel="stylesheet" href="../../templates/custom.css">
 
 
 
 <!-- If the query includes 'print-pdf', use the PDF print sheet -->
 <script>
-  document.write( '<link rel="stylesheet" href="reveal.js/css/print/' +
+  document.write( '<link rel="stylesheet" href="../../reveal.js/css/print/' +
     ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + 
     '.css" type="text/css" media="print">' );
 </script>
@@ -35,7 +35,7 @@
 
 
 <!--[if lt IE 9]>
-<script src="reveal.js/lib/js/html5shiv.js"></script>
+<script src="../../reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 </head>
 
@@ -61,7 +61,7 @@
 <li><a href="http://pandoc.org/installing.html">Pandoc 홈페이지</a>에서 Windows용 설치파일을 다운로드해서 설치.</li>
 </ul>
 <figure>
-<img src="readme-img/pandoc.png" alt="Pandoc Download Page" /><figcaption>Pandoc Download Page</figcaption>
+<img src="img/pandoc.png" alt="Pandoc Download Page" /><figcaption>Pandoc Download Page</figcaption>
 </figure>
 </section><section id="anaconda-설치" class="slide level2">
 <h1>Anaconda 설치</h1>
@@ -69,10 +69,10 @@
 <li><a href="http://continuum.io/downloads">Continuum 홈페이지</a>에서 2.x용 설치파일을 다운로드해서 설치.</li>
 </ul>
 <figure>
-<img src="readme-img/anaconda.png" alt="Anaconda Download Page" /><figcaption>Anaconda Download Page</figcaption>
+<img src="img/anaconda.png" alt="Anaconda Download Page" /><figcaption>Anaconda Download Page</figcaption>
 </figure>
-</section><section id="markdown-문서-편집기-plug-in-설치" class="slide level2">
-<h1>Markdown 문서 편집기 Plug-in 설치</h1>
+</section><section id="markdown-편집-plug-in-설치" class="slide level2">
+<h1>Markdown 편집 Plug-in 설치</h1>
 <div class="mermaid">graph TD
     B(Help)
     B --&gt; C(Eclipse Marketplace...)
@@ -93,7 +93,7 @@
 <li>doc-git-setting project에서 &quot;코드 저장소 복사&quot; 클릭하고, eclipse에서 git clone!</li>
 </ul>
 <figure>
-<img src="readme-img/copy-repo.png" alt="Copy Repository" /><figcaption>Copy Repository</figcaption>
+<img src="img/copy-repo.png" alt="Copy Repository" /><figcaption>Copy Repository</figcaption>
 </figure>
 </section><section id="문서-작성" class="slide level2">
 <h1>문서 작성</h1>
@@ -122,7 +122,7 @@
 <h1>Push!</h1>
 <p>Yobi에 push!</p>
 <figure>
-<img src="readme-img/push.png" alt="push to upstream" /><figcaption>push to upstream</figcaption>
+<img src="img/push.png" alt="push to upstream" /><figcaption>push to upstream</figcaption>
 </figure>
 </section></section>
 <section><section id="reveal.js-간단한-소개" class="titleslide slide level1"><h1>reveal.js 간단한 소개</h1></section><section id="단축키" class="slide level2">
@@ -207,28 +207,32 @@
 <section><section id="마치며..." class="titleslide slide level1"><h1>마치며...</h1></section><section id="todo" class="slide level2">
 <h1>TODO</h1>
 <ul>
-<li>Web이랑 local이랑 다르게 보이는 현상 수정.</li>
+<li>Web이랑 local이랑 다르게 보이는 현상 수정.
+<ul>
+<li><a href="https://github.com/ludwick/reveal.js-mermaid-plugin">mermaid plugin</a> 사용:
+<ul>
+<li>설치 방법: node.js, <a href="http://bower.io/">bower</a>?</li>
+</ul></li>
+</ul></li>
 <li>title slide 배경, font type, font 크기 등 변경.</li>
 <li>li 등 일반 element에도 word-break 적용.</li>
 <li>한글 글씨 한개가 줄내림되는 현상 수정.</li>
 <li>image 및 mermaid output 크기를 canvas 크기에 맞게 조절.</li>
+<li>mathjax test</li>
 </ul>
-</section><section id="mermaid" class="slide level2">
-<h1>mermaid</h1>
+</section><section id="todo-2" class="slide level2">
+<h1>TODO 2</h1>
 <ul>
-<li>https://github.com/ludwick/reveal.js-mermaid-plugin
-<ul>
-<li>설치 방법: http://bower.io/</li>
-</ul></li>
-</ul>
-</section><section id="flowchart---mermaid가-영-잘-안되면..." class="slide level2">
-<h1>flowchart - mermaid가 영 잘 안되면...</h1>
-<ul>
-<li>http://adrai.github.io/flowchart.js/</li>
+<li><a href="http://adrai.github.io/flowchart.js/">flowchart</a> - mermaid가 영 잘 안되면...</li>
 </ul>
 </section><section id="book-formatting-with-css" class="slide level2">
 <h1>Book formatting with CSS</h1>
-<p>http://www.smashingmagazine.com/2015/01/designing-for-print-with-css/ http://alistapart.com/article/boom http://alistapart.com/article/building-books-with-css3</p>
+<ul>
+<li><a href="http://mixu.net/markdown-styles/">Markdown Styles</a></li>
+<li><a href="http://www.smashingmagazine.com/2015/01/designing-for-print-with-css/">Designing for Print with CSS, 2015년</a></li>
+<li><a href="http://alistapart.com/article/building-books-with-css3">Building Books with css3, 2012년</a></li>
+<li><a href="http://alistapart.com/article/boom">Printing a Book with CSS: Boom!, 2005년</a></li>
+</ul>
 </section><section id="misc." class="slide level2">
 <h1>Misc.</h1>
 <ul>
@@ -238,12 +242,12 @@
 </div>
 
 
-<script src="reveal.js/lib/js/head.min.js"></script>
-<link rel="stylesheet" href="mermaid/mermaid.forest.css">
-<script src="reveal.js/js/reveal.min.js"></script>
+<script src="../../reveal.js/lib/js/head.min.js"></script>
+<link rel="stylesheet" href="../../mermaid/mermaid.forest.css">
+<script src="../../reveal.js/js/reveal.min.js"></script>
 
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="word-break-keep-all/jquery.word-break-keep-all.min.js"></script>
+<script src="../../word-break-keep-all/jquery.word-break-keep-all.min.js"></script>
 
 <script>
   // Full list of configuration options available here:
@@ -261,17 +265,17 @@
       transition: Reveal.getQueryHash().transition || 'zoom',
     // Optional libraries used to extend on reveal.js
   dependencies: [
-    { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-    { src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-    { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-    { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-    { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-    { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    { src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: '../../reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: '../../reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: '../../reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: '../../reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: '../../reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
     // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 
     // MathJax
-    ,{ src: 'reveal.js/plugin/math/math.js', async: true }
-    ,{ src: 'reveal.js/plugin/mermaid/mermaid.js', async: true, callback: function() {mermaid.init();} }
+    ,{ src: '../../reveal.js/plugin/math/math.js', async: true }
+    ,{ src: '../../reveal.js/plugin/../../mermaid/mermaid.js', async: true, callback: function() {mermaid.init();} }
   ]
   });
   Reveal.addEventListener( 'slidechanged', function( event ) {

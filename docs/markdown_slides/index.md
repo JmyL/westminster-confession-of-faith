@@ -8,15 +8,15 @@
 
 * [Pandoc 홈페이지](http://pandoc.org/installing.html)에서 Windows용 설치파일을 다운로드해서 설치.
 
-![Pandoc Download Page](readme-img/pandoc.png)
+![Pandoc Download Page](img/pandoc.png)
 
 ## Anaconda 설치
 
 * [Continuum 홈페이지](http://continuum.io/downloads)에서 2.x용 설치파일을 다운로드해서 설치.
 
-![Anaconda Download Page](readme-img/anaconda.png)
+![Anaconda Download Page](img/anaconda.png)
 
-## Markdown 문서 편집기 Plug-in 설치
+## Markdown 편집 Plug-in 설치
 
 ```mermaid
 graph TD
@@ -46,7 +46,7 @@ graph TD
 
 * doc-git-setting project에서 "코드 저장소 복사" 클릭하고, eclipse에서 git clone!
 
-![Copy Repository](readme-img/copy-repo.png)
+![Copy Repository](img/copy-repo.png)
 
 
 ## 문서 작성
@@ -81,7 +81,7 @@ build_md_for_reveal.js.bat ../myfile.md
 
 Yobi에 push!
 
-![push to upstream](readme-img/push.png)
+![push to upstream](img/push.png)
 
 
 
@@ -186,26 +186,24 @@ gantt
 ## TODO
 
 * Web이랑 local이랑 다르게 보이는 현상 수정.
+    * [mermaid plugin](https://github.com/ludwick/reveal.js-mermaid-plugin) 사용: 
+        - 설치 방법: node.js, [bower](http://bower.io/)?
 * title slide 배경, font type, font 크기 등 변경.
 * li 등 일반 element에도 word-break 적용.
 * 한글 글씨 한개가 줄내림되는 현상 수정.
 * image 및 mermaid output 크기를 canvas 크기에 맞게 조절.
+* mathjax test
 
-## mermaid
+## TODO 2
 
-- https://github.com/ludwick/reveal.js-mermaid-plugin
-    - 설치 방법: http://bower.io/
-
-
-## flowchart - mermaid가 영 잘 안되면...
-
-- http://adrai.github.io/flowchart.js/
+- [flowchart](http://adrai.github.io/flowchart.js/) - mermaid가 영 잘 안되면...
 
 ## Book formatting with CSS
 
-http://www.smashingmagazine.com/2015/01/designing-for-print-with-css/
-http://alistapart.com/article/boom
-http://alistapart.com/article/building-books-with-css3
+- [Markdown Styles](http://mixu.net/markdown-styles/)
+- [Designing for Print with CSS, 2015년](http://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
+- [Building Books with css3, 2012년](http://alistapart.com/article/building-books-with-css3)
+- [Printing a Book with CSS: Boom!, 2005년](http://alistapart.com/article/boom)
 
 ## Misc.
 

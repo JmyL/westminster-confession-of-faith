@@ -1,4 +1,4 @@
-% Repo 관리방안
+% Git을 이용한 소스 관리방안
 % Sungsik Nam
 % 2015-08-17
 
@@ -31,7 +31,7 @@
 
 * [doc-git-setting project](http://dev.melfas.com:9000/platform_g/doc-git-setting/posts) 참조
 
-![](img/doc-git-setting.PNG)
+![](img/doc-git-setting.png)
 
 
 
