@@ -17,28 +17,17 @@
 ![Anaconda Download Page](readme-img/anaconda.png)
 
 ## Markdown 문서 편집기 Plug-in 설치
-* Eclipse->Help->Eclipse Marketplace...->Markdown 검색->Markdown Test Editor 1.2.0 Install
-* doc-git-setting Project 우클릭 -> Test file Encoding -> Other:UTF-8 선택 -> OK Click
-
-## Markdown Doc Build Setting in Eclipse
-```mermaid
-* doc-git-setting Project 우클릭 -> Builder 선택 -> New -> Program 선택 및 OK -> Location: ${workspace_loc:/doc-git-setting/scripts/build_md_for_reveal.js.bat} 입력 -> Working Directory: ${workspace_loc:/doc-git-setting/scripts} -> Arguments: ../${selected_resource_name} -> OK
-```
-
-## Markdown Doc Build
-```mermaid
-* ctrl + B 
-  ※하지만 따로 세팅하지 않으면 Open된 모든 Project가 Build 됨 주의
-```
 
 ```mermaid
-* Build Tip
-Eclipse key 설정에서 
-Build All -> ctrl+B, A
-Build Project -> ctrl+B, B
-로 설정을 해두면
-Ctrl +B, B를 누르면 선택된 Project만 Build 가능
+graph TD
+    B(Help)
+    B --> C(Eclipse Marketplace...)
+    C --> D(Search 'Markdown')
+    D --> E(Install 'Markdown Text Editor')
 ```
+
+
+
 
 # 문서작성
 
@@ -201,3 +190,23 @@ gantt
 * li 등 일반 element에도 word-break 적용.
 * 한글 글씨 한개가 줄내림되는 현상 수정.
 * image 및 mermaid output 크기를 canvas 크기에 맞게 조절.
+
+## mermaid
+
+- https://github.com/ludwick/reveal.js-mermaid-plugin
+    - 설치 방법: http://bower.io/
+
+
+## flowchart - mermaid가 영 잘 안되면...
+
+- http://adrai.github.io/flowchart.js/
+
+## Book formatting with CSS
+
+http://www.smashingmagazine.com/2015/01/designing-for-print-with-css/
+http://alistapart.com/article/boom
+http://alistapart.com/article/building-books-with-css3
+
+## Misc.
+
+* Project setting: Eclipse Project 우클릭하고, Text file Encoding을 Other:UTF-8로 선택.
