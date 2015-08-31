@@ -22,6 +22,10 @@ if len(sys.argv) < 3:
 output_file_format = sys.argv[1]
 input_foldername = sys.argv[2]
 
+if not os.path.isdir("./docs/"+input_foldername):
+	print(u"\t./docs에 %s 이름의 폴더가 없습니다." % input_foldername)
+	sys.exit()
+
 if output_file_format == 'revealjs':
 
 	md_filename = "./docs/"+input_foldername+"/index.md"
