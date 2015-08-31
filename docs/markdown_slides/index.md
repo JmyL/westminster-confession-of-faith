@@ -189,7 +189,7 @@ gantt
     * [mermaid plugin](https://github.com/ludwick/reveal.js-mermaid-plugin) 사용: 
         - 설치 방법: node.js, [bower](http://bower.io/)?
 * title slide 배경, font type, font 크기 등 변경.
-* li 등 일반 element에도 word-break 적용.
+* li 등 일반 element에도 word-break 적용. header에 `<br />` 사용 시 word-break 이상하게 적용되는 문제 수정.
 * 한글 글씨 한개가 줄내림되는 현상 수정.
 * image 및 mermaid output 크기를 canvas 크기에 맞게 조절.
 * mathjax test
