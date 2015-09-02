@@ -64,8 +64,9 @@
 이슈 생성 시 참조 추가
 -----------------------------------------------
 
-* 관련 인원에게 해당 이슈를 공유하기 위해서는 본문에 +@아무개 (이름은 자동으로 ID로 교체됨)와 같이 표시하면 해당 인원에게 알람이 갑니다.
+* 관련 인원에게 해당 이슈를 공유하기 위해서는 본문에 `+@아무개` (이름은 자동으로 ID로 교체됨)와 같이 표시하면 해당 인원에게 알람이 갑니다.
 * 이슈를 검토해 줄 선임자를 참조로 반드시 추가해 주세요.
+* `@이름`으로 ID가 검색되는 기능이 잘 동작하지 않는 경우가 있네요! 확인하고 수정하겠습니다.
 
 
 개발
@@ -99,7 +100,19 @@
 * 이렇게 개발된 branch를 push branch로 개인 프로젝트에 푸쉬한 후, 코드 주고받기를 통해 원본 프로젝트에 반영을 요청합니다.
 
 
+기타
+======================================================
 
+-----------------------------------------------
+
+* readme.md file은 웹 인터페이스로 수정하지 않도록 합시다. 해당 수정사항이 commit으로 반영되기 때문입니다.
+* 마일스톤, 게시판 운영 방법은 사용해 보며 함께 좋은 방향을 찾아 봅시다.
+
+
+개선해야 할 문제들...
+-----------------------------------------------
+
+* Markdown 문서에서 참조한 상대경로 이미지가 보여지지 않습니다. 다음 릴리즈에서 해결될 것으로 보입니다([#654 참조](https://github.com/naver/yobi/issues/654)).
 
 
 
@@ -190,12 +203,5 @@ H/W 파트
 -----------------------------------------------
 
 * [131 deview 2013 yobi-채수원](http://www.slideshare.net/deview/131-deview-2013-yobi) from [deview](http://www.slideshare.net/deview)
-* [Github Issue Page](https://github.com/naver/yobi/issues)
-
-* simulation-env(김극래 +정일영 +한승준)
-	* netlist-script
-* circle-pattern(남성식 +임민우 +김극래)
-* pressure-detection(남성식 +김진태 +한승준)
-* pattern-upgrade(김극래 +정일영 +한승준)
-* design-guide
-* gf 2triangle -> 삭제
+* [Yobi Issue Page on Github](https://github.com/naver/yobi/issues)
+* [Yobi 사용자 그룹](https://groups.google.com/forum/#!forum/yobi-ko)

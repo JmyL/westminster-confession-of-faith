@@ -108,8 +108,9 @@
 </section><section id="이슈-생성-시-참조-추가" class="slide level2">
 <h1>이슈 생성 시 참조 추가</h1>
 <ul>
-<li>관련 인원에게 해당 이슈를 공유하기 위해서는 본문에 +<span class="citation" data-cites="아무개">@아무개</span> (이름은 자동으로 ID로 교체됨)와 같이 표시하면 해당 인원에게 알람이 갑니다.</li>
+<li>관련 인원에게 해당 이슈를 공유하기 위해서는 본문에 <code>+@아무개</code> (이름은 자동으로 ID로 교체됨)와 같이 표시하면 해당 인원에게 알람이 갑니다.</li>
 <li>이슈를 검토해 줄 선임자를 참조로 반드시 추가해 주세요.</li>
+<li><code>@이름</code>으로 ID가 검색되는 기능이 잘 동작하지 않는 경우가 있네요! 확인하고 수정하겠습니다.</li>
 </ul>
 </section></section>
 <section><section id="개발" class="titleslide slide level1"><h1>개발</h1></section><section id="개인-프로젝트에서-개발" class="slide level2">
@@ -136,6 +137,18 @@
 <ul>
 <li>주고받기를 신청하고자 하는 branch의 최종 commit message는 <code>#이슈번호 - ...</code> 와 같이 이슈를 언급해서 코드를 리뷰하는 사람이 어떤 이슈 관련된 코드인지 알아볼 수 있도록 합니다.</li>
 <li>이렇게 개발된 branch를 push branch로 개인 프로젝트에 푸쉬한 후, 코드 주고받기를 통해 원본 프로젝트에 반영을 요청합니다.</li>
+</ul>
+</section></section>
+<section><section id="기타" class="titleslide slide level1"><h1>기타</h1></section><section class="slide level2">
+
+<ul>
+<li>readme.md file은 웹 인터페이스로 수정하지 않도록 합시다. 해당 수정사항이 commit으로 반영되기 때문입니다.</li>
+<li>마일스톤, 게시판 운영 방법은 사용해 보며 함께 좋은 방향을 찾아 봅시다.</li>
+</ul>
+</section><section id="개선해야-할-문제들..." class="slide level2">
+<h1>개선해야 할 문제들...</h1>
+<ul>
+<li>Markdown 문서에서 참조한 상대경로 이미지가 보여지지 않습니다. 다음 릴리즈에서 해결될 것으로 보입니다(<a href="https://github.com/naver/yobi/issues/654">#654 참조</a>).</li>
 </ul>
 </section></section>
 <section><section id="관리" class="titleslide slide level1"><h1>관리</h1></section><section id="이슈-리뷰" class="slide level2">
@@ -209,16 +222,8 @@
 
 <ul>
 <li><a href="http://www.slideshare.net/deview/131-deview-2013-yobi">131 deview 2013 yobi-채수원</a> from <a href="http://www.slideshare.net/deview">deview</a></li>
-<li><p><a href="https://github.com/naver/yobi/issues">Github Issue Page</a></p></li>
-<li>simulation-env(김극래 +정일영 +한승준)
-<ul>
-<li>netlist-script</li>
-</ul></li>
-<li>circle-pattern(남성식 +임민우 +김극래)</li>
-<li>pressure-detection(남성식 +김진태 +한승준)</li>
-<li>pattern-upgrade(김극래 +정일영 +한승준)</li>
-<li>design-guide</li>
-<li><p>gf 2triangle -&gt; 삭제</p></li>
+<li><a href="https://github.com/naver/yobi/issues">Yobi Issue Page on Github</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/yobi-ko">Yobi 사용자 그룹</a></li>
 </ul>
 </section></section>
 </div>
