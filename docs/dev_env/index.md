@@ -77,7 +77,7 @@ Eclipse
 
 * [Code beautifier](./files/AStyle-2.04-windows.zip)
 	* Code의 indentation 등을 사내 표준에 맞게 수정해 주는 도구입니다.
-	* 압축파일\AStyle\bin\의 AStyle.exe를 C:\MinGW\msys\1.0\bin\AStyle.exe로 복사.
+	* 압축파일 아래 `\AStyle\bin\`의 `AStyle.exe`를 `C:\MinGW\msys\1.0\bin\AStyle.exe`로 복사.
 	* 다음 페이지와 같이 Eclipse 설정!
 
 -------------------------------------------------
