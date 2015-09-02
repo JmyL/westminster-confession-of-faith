@@ -126,9 +126,10 @@ Build 환경 {#build_env}
 	* 상단메뉴에 Installation - Apply Changes를 클릭하면 설치.
 
 
-개발용 장비 드라이버 설치
+Fx2 Board 드라이버 설치
 ----------------------------------
 
+* I2C Emulation 장비입니다. USB 개발환경에서는 필요하지 않습니다.
 * [Device Driver](./files/FX2_USB_Driver_v348_20120430_withCert64Cy.7z) 다운로드.
 * (Windows 8은 다음 페이지의 설치 시 주의사항 참조.)
 * 장치관리자에서 인식이 안된 장치를 우클릭하고 '드라이버 업데이트' 클릭.
