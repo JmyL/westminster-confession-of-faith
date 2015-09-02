@@ -56,7 +56,7 @@ Eclipse
 
 -------------------------------------------------
 
-* [Eclipse GNU Arm Plugin](http://www.google.com/search?Eclipse+GNU+ARM+Plugin+Install) 설치
+* [Eclipse GNU Arm Plugin](http://www.google.com/search?q=Eclipse+GNU+ARM+Plugin+Install) 설치
 	* 링크의 설명에 따라 install. 큰 변화가 없다면 아래 방법과 동일할 겁니다.
 	* Eclipse 실행 -> Help -> Install New Software 를 클릭한 뒤 add 클릭.
 	* Name에 GNU ARM Eclipse Plugin, Location에 http://gnuarmeclipse.sourceforge.net/updates 를 입력한 뒤 OK.
@@ -111,7 +111,7 @@ Compiler
 
 * PC App 개발을 위한 GCC Compiler
 	* [Build 환경](#build_env) 페이지에서 함께 설치합니다.
-* [arm linuxhf compiler](http://www.google.com/search?gcc-linaro-arm-linux-gnueabihf win32)
+* [arm linuxhf compiler](http://www.google.com/search?q=gcc-linaro-arm-linux-gnueabihf+win32)
 	* Set에서 구동할 debug app 개발을 위해 설치합니다.
 	* `gcc-linaro-arm-linux-gnueabihf-..._win32.exe` 이름의 파일을 다운로드합니다. 유사한 이름의 파일이 많으니 주의바랍니다.
 	* 설치 경로에서 "Program Files" 경로는 지워 주셔야 합니다. 예를 들어, C:\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.10 과 같이 설치합니다.
