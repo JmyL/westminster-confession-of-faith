@@ -52,11 +52,11 @@ Eclipse
 -------------------------------------------------
 
 * [JRE](http://www.google.com/search?q=java+jre) 설치.
-* [Eclipse](http://www.google.com/search?q=Eclipse+IDE+for+C+Developers)를 적당한 위치에 압축해제.
+* [Eclipse](http://www.google.com/search?q=Eclipse+CDT+Download) 에서 'Eclipse package'를 OS에 맞추어 다운로드 받은 후 적당한 위치에 압축해제.
 
 -------------------------------------------------
 
-* [Eclipse GNU Arm Plugin](Eclipse GNU ARM Plugin Install) 설치
+* [Eclipse GNU Arm Plugin](http://www.google.com/search?Eclipse+GNU+ARM+Plugin+Install) 설치
 	* 링크의 설명에 따라 install. 큰 변화가 없다면 아래 방법과 동일할 겁니다.
 	* Eclipse 실행 -> Help -> Install New Software 를 클릭한 뒤 add 클릭.
 	* Name에 GNU ARM Eclipse Plugin, Location에 http://gnuarmeclipse.sourceforge.net/updates 를 입력한 뒤 OK.
