@@ -151,7 +151,6 @@ S/W 개발그룹에서 이 프로젝트를 fork 받으셔서 작성해 주세요
 
 * [Yobi-Git 사용자 매뉴얼](http://dev.melfas.com:9000/jmyl/doc-development-env/post/3) 참조
 * [누구나 쉽게 이해할 수 있는 Git 입문](http://backlogtool.com/git-guide/kr/intro/intro1_1.html)
-![](img/doc-git-setting.png)
 - [SVN에서 Git으로 갈아타기](https://www.atlassian.com/git/tutorials/migrating-overview)
 - [Advanced Git Tutorials](https://www.atlassian.com/git/tutorials/advanced-overview)
 - [gitflow](http://danielkummer.github.io/git-flow-cheatsheet/index.ko_KR.html)
