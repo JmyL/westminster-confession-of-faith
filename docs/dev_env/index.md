@@ -46,6 +46,7 @@ Glue & Research Language
 * Windows 계정(ID)는 영어로 해 주시기 바랍니다. 보통 format된 PC를 받는데, 이 때 한글 이름으로 되어있는 경우 영어로 다시 설치해 주기를 요청해 주세요.
 * 모든 설치는 별도로 source용 공간을 partitioning하지 않은 상황에서 진행되어야 합니다. 일반적인 방법으로 개발 진행 시 항상 Git 서버에 소스가 백업되므로 포맷할 때도 불편함이 없습니다.
 * 특정 tool 설치 시 환경변수인 HOME 을 수정해서 문제 된 경우가 있었습니다. HOME 변수도 기본 셋팅인 C:\Users\아이디\ 에서 수정하지 말아 주세요.
+* 문서대로 따라갔는데 문제가 있다면 ssnam@melfas.com으로 문제 사항을 공유해 주세요 ;)
 
 
 
@@ -110,7 +111,7 @@ Compiler
 
 -------------------------------------------------
 
-* 프로젝트마다 다른 버전의 compiler를 쓰고 있으므로 참여하고 있는 프로젝트가 사용하고 있는 버전의 컴파일러를 설치해 주셔야 합니다. 이는 이클립스에서 Project Properties -> C/C++ Build -> Environment -> PATH 에서 GNU Tools ARM Embedded 관련 경로이름을 통해 확인할 수 있습니다.
+* 프로젝트마다 다른 버전의 compiler를 쓰고 있으므로 참여하고 있는 프로젝트가 사용하고 있는 버전의 컴파일러를 설치해 주셔야 합니다. 이는 이클립스에서 Project Properties -> C/C++ Build -> Environment -> PATH 에서 GNU Tools ARM Embedded 관련 경로이름을 통해 확인할 수 있습니다. **이 PATH를 임의로 수정하시라는 의미가 아닙니다. 주의!**
 
 
 Cortex-M series Compiler
