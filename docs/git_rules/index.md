@@ -154,3 +154,5 @@ S/W 개발그룹에서 이 프로젝트를 fork 받으셔서 작성해 주세요
 ![](img/doc-git-setting.png)
 - [SVN에서 Git으로 갈아타기](https://www.atlassian.com/git/tutorials/migrating-overview)
 - [Advanced Git Tutorials](https://www.atlassian.com/git/tutorials/advanced-overview)
+- [gitflow](http://danielkummer.github.io/git-flow-cheatsheet/index.ko_KR.html)
+- [Mars에 Gitflow가 통합됐음! ㅋㅋ](http://eclipsesource.com/blogs/2015/06/22/git-flow-top-eclipse-mars-feature-3/)
