@@ -81,52 +81,47 @@
 </figure>
 </section><section id="협업-sw-개발-플랫폼" class="slide level2">
 <h1>협업 S/W 개발 플랫폼</h1>
-</section></section>
-<section><section id="설치" class="titleslide slide level1"><h1>설치</h1></section><section id="설치-진행에-앞서서..." class="slide level2">
+<figure>
+<img src="img/yobi.png" />
+</figure>
+</section><section id="설치-진행에-앞서서..." class="slide level2">
 <h1>설치 진행에 앞서서...</h1>
 <ul>
 <li>Windows 계정(ID)는 영어로 해 주시기 바랍니다. 보통 format된 PC를 받는데, 이 때 한글 이름으로 되어있는 경우 영어로 다시 설치해 주기를 요청해 주세요.</li>
 <li>모든 설치는 별도로 source용 공간을 partitioning하지 않은 상황에서 진행되어야 합니다. 일반적인 방법으로 개발 진행 시 항상 Git 서버에 소스가 백업되므로 포맷할 때도 불편함이 없습니다.</li>
 <li>특정 tool 설치 시 환경변수인 HOME 을 수정해서 문제 된 경우가 있었습니다. HOME 변수도 기본 셋팅인 C: 에서 수정하지 말아 주세요.</li>
 </ul>
-</section><section id="eclipse" class="slide level2">
-<h1>Eclipse</h1>
+</section></section>
+<section><section id="eclipse" class="titleslide slide level1"><h1>Eclipse</h1></section><section class="slide level2">
+
 <ul>
 <li><a href="http://www.google.com/search?q=java+jre">JRE</a> 설치.</li>
 <li><a href="http://www.google.com/search?q=Eclipse+CDT+Download">Eclipse</a> 에서 'Eclipse package'를 OS에 맞추어 다운로드 받은 후 적당한 위치에 압축해제.</li>
 </ul>
-</section><section class="slide level2">
-
+</section><section id="eclipse-gnu-arm-plugin" class="slide level2">
+<h1>Eclipse GNU Arm Plugin</h1>
 <ul>
-<li><a href="http://www.google.com/search?q=Eclipse+GNU+ARM+Plugin+Install">Eclipse GNU Arm Plugin</a> 설치
-<ul>
+<li><a href="http://www.google.com/search?q=Eclipse+GNU+ARM+Plugin+Install">Eclipse GNU Arm Plugin</a> 에서 다운로드.</li>
 <li>링크의 설명에 따라 install. 큰 변화가 없다면 아래 방법과 동일할 겁니다.</li>
 <li>Eclipse 실행 -&gt; Help -&gt; Install New Software 를 클릭한 뒤 add 클릭.</li>
 <li>Name에 GNU ARM Eclipse Plugin, Location에 http://gnuarmeclipse.sourceforge.net/updates 를 입력한 뒤 OK.</li>
-</ul></li>
 </ul>
-</section><section class="slide level2">
-
+</section><section id="멜파스-표준설정-적용" class="slide level2">
+<h1>멜파스 표준설정 적용</h1>
 <ul>
 <li><a href="./files/melfas-20150831.epf" download>Eclipse Preference</a> Update
 <ul>
 <li>File -&gt; Import -&gt; General -&gt; Preference 에서 다운로드 한 파일 선택 후 Next -&gt; Import all</li>
 </ul></li>
-</ul>
-</section><section class="slide level2">
-
-<ul>
 <li><a href="http://www.google.com/search?q=나눔고딕코딩+다운로드">Font(나눔고딕코딩)</a></li>
 </ul>
-</section><section class="slide level2">
-
-<ul>
-<li><a href="./files/AStyle-2.04-windows.zip">Code beautifier</a>
+</section><section id="코드-뷰티파이어" class="slide level2">
+<h1>코드 뷰티파이어</h1>
 <ul>
 <li>Code의 indentation 등을 사내 표준에 맞게 수정해 주는 도구입니다.</li>
+<li><a href="./files/AStyle-2.04-windows.zip">Code beautifier</a> 다운로드.</li>
 <li>압축파일 아래 <code>\AStyle\bin\</code>의 <code>AStyle.exe</code>를 <code>C:\MinGW\msys\1.0\bin\AStyle.exe</code>로 복사.</li>
 <li>다음 페이지와 같이 Eclipse 설정!</li>
-</ul></li>
 </ul>
 </section><section class="slide level2">
 
@@ -140,54 +135,51 @@
 <li>Refresh tab에서 실행 후 file refresh하도록 설정(Refresh resources upon completion) 체크.</li>
 <li>Apply!</li>
 </ul></li>
-</ul>
-</section><section class="slide level2">
-
-<ul>
 <li>이제 선택한 프로젝트의 소스파일을 CTRL+SHIFT+F로 소스 코드를 beautifying할 수 있습니다.</li>
 </ul>
-</section><section id="compiler-1" class="slide level2">
-<h1>Compiler</h1>
+</section><section id="git-setting" class="slide level2">
+<h1>Git Setting</h1>
+<ul>
+<li><a href="./files/.gitconfig">git config</a>, <a href="./files/.global_ignore">global ignore</a> 다운로드</li>
+<li>해당 파일을 <code>C:\Users\아이디\</code> 폴더에 copy.</li>
+<li>.gitconfig 파일 안에 있는 이름, 이메일을 gerrit 셋팅과 동일하게 설정. Eclipse에서 Window - Preference - Git - Configuration 에서 user email &amp; name 수정.</li>
+</ul>
+</section></section>
+<section><section id="compiler-1" class="titleslide slide level1"><h1>Compiler</h1></section><section class="slide level2">
+
 <ul>
 <li>프로젝트마다 다른 버전의 compiler를 쓰고 있으므로 참여하고 있는 프로젝트가 사용하고 있는 버전의 컴파일러를 설치해 주셔야 합니다. 이는 이클립스에서 Project Properties -&gt; C/C++ Build -&gt; Environment -&gt; PATH 에서 GNU Tools ARM Embedded 관련 경로이름을 통해 확인할 수 있습니다.</li>
 </ul>
-</section><section class="slide level2">
-
+</section><section id="cortex-m-series-compiler" class="slide level2">
+<h1>Cortex-M series Compiler</h1>
 <ul>
-<li><a href="http://www.google.com/search?q=GNU+Tools+for+ARM+Embedded+Processors+Download">GNU Tools for ARM Embedded Processors</a>
+<li><a href="http://www.google.com/search?q=GNU+Tools+for+ARM+Embedded+Processors+Download">GNU Tools for ARM Embedded Processors</a> 다운로드.</li>
+<li><strong>4.9-2014-q4-major</strong> 버전에서 Cortex-M3 코어에서 strict-volatile-bitfields 옵션이 제대로 동작 하지 않는 문제가 해결되었으므로 주의 바랍니다.</li>
+<li>설치 경로에서 <strong>&quot;Program Files&quot; 경로는 지워 주셔야</strong> 합니다.
 <ul>
-<li><strong>4.9-2014-q4-major</strong> 버전에서 Coretex-M3 코어에서 strict-volatile-bitfields 옵션이 제대로 동작 하지 않는 문제가 해결되었으므로 주의 바랍니다.</li>
-<li>설치 경로에서 <strong>&quot;Program Files&quot; 경로는 지워 주셔야</strong> 합니다.</li>
 <li>e.g. <code>C:\Program Files\GNU Tools ARM Embedded\4.8 2014q2</code> -&gt; <code>C:\GNU Tools ARM Embedded\4.8 2014q2</code></li>
 </ul></li>
 </ul>
-</section><section class="slide level2">
-
-<ul>
-<li>PC App 개발을 위한 GCC Compiler
-<ul>
-<li><a href="#/build_env">Build 환경</a> 페이지에서 함께 설치합니다.</li>
-</ul></li>
-<li><a href="http://www.google.com/search?q=gcc-linaro-arm-linux-gnueabihf+win32">arm linuxhf compiler</a>
+</section><section id="arm-linux-app용-compiler" class="slide level2">
+<h1>Arm Linux-App용 Compiler</h1>
 <ul>
 <li>Set에서 구동할 debug app 개발을 위해 설치합니다.</li>
+<li><a href="http://www.google.com/search?q=gcc-linaro-arm-linux-gnueabihf+win32">arm linuxhf compiler</a> 다운로드.</li>
 <li><code>gcc-linaro-arm-linux-gnueabihf-..._win32.exe</code> 이름의 파일을 다운로드합니다. 유사한 이름의 파일이 많으니 주의바랍니다.</li>
 <li>설치 경로에서 &quot;Program Files&quot; 경로는 지워 주셔야 합니다. 예를 들어, C:-linaro-arm-linux-gnueabihf-4.8-2013.10 과 같이 설치합니다.</li>
-</ul></li>
 </ul>
 </section><section id="build_env" class="slide level2">
-<h1>Build 환경</h1>
+<h1>PC App용 Compiler 및 Build 환경</h1>
 <ul>
-<li><a href="http://www.google.com/search?q=mingw-get-setup.exe">MinGW Installer</a>
-<ul>
-<li>검색된 sourceforge site에서 mingw-get-setup.exe 다운로드.</li>
+<li><a href="http://www.google.com/search?q=mingw-get-setup.exe">MinGW Installer</a>에서 mingw-get-setup.exe 다운로드.</li>
 <li>mingw-developer-toolkit와 msys-base, mingw32-base, mingw32-gcc-g++를 체크.</li>
 <li>상단메뉴에 Installation - Apply Changes를 클릭하면 설치.</li>
-</ul></li>
 </ul>
-</section><section id="개발용-장비-드라이버-설치" class="slide level2">
-<h1>개발용 장비 드라이버 설치</h1>
+</section></section>
+<section><section id="hw-드라이버-설치" class="titleslide slide level1"><h1>H/W 드라이버 설치</h1></section><section id="fx2-board" class="slide level2">
+<h1>Fx2 Board</h1>
 <ul>
+<li>I2C Emulation 장비입니다. USB 개발환경에서는 필요하지 않습니다.</li>
 <li><a href="./files/FX2_USB_Driver_v348_20120430_withCert64Cy.7z">Device Driver</a> 다운로드.</li>
 <li>(Windows 8은 다음 페이지의 설치 시 주의사항 참조.)</li>
 <li>장치관리자에서 인식이 안된 장치를 우클릭하고 '드라이버 업데이트' 클릭.</li>
@@ -205,16 +197,16 @@
 <li>'시작설정'에 들어가서 '다시시작' 클릭하면 재부팅됨.</li>
 <li>선택 창에서 7 또는 F7을 눌러서 '드리아버서명적용사용안함' 선택.</li>
 </ul>
-</section><section id="phone-device-driver" class="slide level2">
-<h1>Phone Device Driver</h1>
+</section><section id="기타-개발환경" class="slide level2">
+<h1>기타 개발환경</h1>
 <ul>
-<li><a href="./files/SAMSUNG_USB_Driver_for_Mobile_Phones.zip">삼성 Android Phone Driver</a></li>
-<li>다른 vendor phone에 필요한 자료도 여기에 추가 부탁드립니다.</li>
+<li>wiki에 관련 페이지를 생성하겠습니다.</li>
 </ul>
 </section></section>
 <section><section id="읽을거리..." class="titleslide slide level1"><h1>읽을거리...</h1></section><section class="slide level2">
 
 <ul>
+<li><a href="http://eclipsesource.com/blogs/2015/06/24/top-10-eclipse-mars-features/">Top 10 Eclipse Mars Features</a></li>
 <li><a href="http://cafe.naver.com/eclipseplugin.cafe?iframe_url=/ArticleRead.nhn%3Farticleid=17">Eclipse Plug-in 개발</a></li>
 <li><a href="http://www.javajigi.net/display/IDE/Eclipse">Eclipse Article</a></li>
 <li><a href="http://eclipse.or.kr/wiki/%ED%8A%B9%EC%A7%91%EA%B8%B0%EC%82%AC:GEF%EC%9D%98_%EC%9D%B4%ED%95%B4_1%EB%B6%80">GEF의 이해 - 1부</a></li>
