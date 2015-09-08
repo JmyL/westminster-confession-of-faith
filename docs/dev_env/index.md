@@ -57,7 +57,7 @@ Eclipse
 
 * [JRE](http://www.google.com/search?q=java+jre) 설치.
 * [Eclipse](http://www.google.com/search?q=Eclipse+CDT+Download) 에서 'Eclipse package'를 OS에 맞추어 다운로드 받은 후 적당한 위치에 압축해제. Mars 버전 좋습니다! Markdown 편집도 되고, gitflow도 통합되어있고... ;)
-
+* Mars 버전 CDT에 버그가 있네요!(2015-09-08) CDT 8.7 버전에서 C99 문법을 사용한 C file에서 syntax highlight가 정상동작하지 않습니다. `http://download.eclipse.org/tools/cdt/builds/master/nightly`에서 C99 관련 내용을 8.8 이후로 업데이트 받으면 해결됩니다.
 
 Eclipse GNU Arm Plugin
 -------------------------------------------------
