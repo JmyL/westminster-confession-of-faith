@@ -56,7 +56,7 @@ Eclipse
 -------------------------------------------------
 
 * [JRE](http://www.google.com/search?q=java+jre) 설치.
-* [Eclipse](http://www.google.com/search?q=Eclipse+CDT+Download) 에서 'Eclipse package'를 OS에 맞추어 다운로드 받은 후 적당한 위치에 압축해제.
+* [Eclipse](http://www.google.com/search?q=Eclipse+CDT+Download) 에서 'Eclipse package'를 OS에 맞추어 다운로드 받은 후 적당한 위치에 압축해제. Mars 버전 좋습니다! Markdown 편집도 되고, gitflow도 통합되어있고... ;)
 
 
 Eclipse GNU Arm Plugin
@@ -99,7 +99,7 @@ Eclipse GNU Arm Plugin
 Git Setting
 -------------------------------------------------
 
-* [git config](./files/.gitconfig), [global ignore](./files/.global_ignore) 다운로드
+* <a href="./files/.gitconfig" download>.gitconfig</a>, <a href="./files/.global_ignore" download>.global_ignore</a> 파일 다운로드.
 * 해당 파일을 `C:\Users\아이디\` 폴더에 copy.
 * .gitconfig 파일 안에 있는 이름, 이메일을 gerrit 셋팅과 동일하게 설정.
 Eclipse에서 Window - Preference - Git - Configuration 에서 user email & name 수정.
