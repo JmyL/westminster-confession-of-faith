@@ -1,0 +1,7 @@
+{
+    "format": "reveal.js",
+    "options": {
+        "theme": "sky",
+        "transition": "convex"
+    }
+}

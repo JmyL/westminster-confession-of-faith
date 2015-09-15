@@ -15,8 +15,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <link rel="stylesheet" href="../../reveal.js/css/reveal.min.css">
-  <link rel="stylesheet" href="../../reveal.js/css/theme/white.css" id="theme">
-
+  <link rel="stylesheet" href="../../reveal.js/css/theme/sky.css" id="theme">
+  
 <!-- For syntax highlighting -->
   <link rel="stylesheet" href="../../reveal.js/lib/css/zenburn.css">
 
@@ -64,12 +64,12 @@
 </section><section id="ide" class="slide level2">
 <h1>IDE</h1>
 <figure>
-<img src="img/eclipse.png" />
+<img src="img/eclipse.png" alt="" />
 </figure>
 </section><section id="compiler" class="slide level2">
 <h1>Compiler</h1>
 <figure>
-<img src="img/gnugcc.png" />
+<img src="img/gnugcc.png" alt="" />
 </figure>
 </section><section id="build-환경" class="slide level2">
 <h1>Build 환경</h1>
@@ -77,12 +77,12 @@
 </section><section id="glue-research-language" class="slide level2">
 <h1>Glue &amp; Research Language</h1>
 <figure>
-<img src="img/python.jpg" />
+<img src="img/python.jpg" alt="" />
 </figure>
 </section><section id="협업-sw-개발-플랫폼" class="slide level2">
 <h1>협업 S/W 개발 플랫폼</h1>
 <figure>
-<img src="img/yobi.png" />
+<img src="img/yobi.png" alt="" />
 </figure>
 </section><section id="설치-진행에-앞서서..." class="slide level2">
 <h1>설치 진행에 앞서서...</h1>
@@ -90,6 +90,7 @@
 <li>Windows 계정(ID)는 영어로 해 주시기 바랍니다. 보통 format된 PC를 받는데, 이 때 한글 이름으로 되어있는 경우 영어로 다시 설치해 주기를 요청해 주세요.</li>
 <li>모든 설치는 별도로 source용 공간을 partitioning하지 않은 상황에서 진행되어야 합니다. 일반적인 방법으로 개발 진행 시 항상 Git 서버에 소스가 백업되므로 포맷할 때도 불편함이 없습니다.</li>
 <li>특정 tool 설치 시 환경변수인 HOME 을 수정해서 문제 된 경우가 있었습니다. HOME 변수도 기본 셋팅인 C: 에서 수정하지 말아 주세요.</li>
+<li>문서대로 따라갔는데 문제가 있다면 ssnam@melfas.com으로 문제 사항을 공유해 주세요 ;)</li>
 </ul>
 </section></section>
 <section><section id="eclipse" class="titleslide slide level1"><h1>Eclipse</h1></section><section class="slide level2">
@@ -149,7 +150,7 @@
 <section><section id="compiler-1" class="titleslide slide level1"><h1>Compiler</h1></section><section class="slide level2">
 
 <ul>
-<li>프로젝트마다 다른 버전의 compiler를 쓰고 있으므로 참여하고 있는 프로젝트가 사용하고 있는 버전의 컴파일러를 설치해 주셔야 합니다. 이는 이클립스에서 Project Properties -&gt; C/C++ Build -&gt; Environment -&gt; PATH 에서 GNU Tools ARM Embedded 관련 경로이름을 통해 확인할 수 있습니다.</li>
+<li>프로젝트마다 다른 버전의 compiler를 쓰고 있으므로 참여하고 있는 프로젝트가 사용하고 있는 버전의 컴파일러를 설치해 주셔야 합니다. 이는 이클립스에서 Project Properties -&gt; C/C++ Build -&gt; Environment -&gt; PATH 에서 GNU Tools ARM Embedded 관련 경로이름을 통해 확인할 수 있습니다. <strong>이 PATH를 임의로 수정하시라는 의미가 아닙니다. 주의!</strong></li>
 </ul>
 </section><section id="cortex-m-series-compiler" class="slide level2">
 <h1>Cortex-M series Compiler</h1>
@@ -233,10 +234,11 @@
     history: true,
     center: true,
     viewDistance: 30000,
-  // available themes are in /css/theme
-      theme: Reveal.getQueryHash().theme || 'white', 
-    // default/cube/page/concave/zoom/linear/fade/none
-      transition: Reveal.getQueryHash().transition || 'zoom',
+    // available themes are in /css/theme
+    theme: 'sky', // available themes are in /css/theme
+    transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+
     // Optional libraries used to extend on reveal.js
   dependencies: [
     { src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },

@@ -15,8 +15,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <link rel="stylesheet" href="../../reveal.js/css/reveal.min.css">
+$if(theme)$
+  <link rel="stylesheet" href="../../reveal.js/css/theme/$theme$.css" id="theme">
+$else$
   <link rel="stylesheet" href="../../reveal.js/css/theme/white.css" id="theme">
-
+$endif$
+  
 <!-- For syntax highlighting -->
   <link rel="stylesheet" href="../../reveal.js/lib/css/zenburn.css">
 
@@ -84,10 +88,11 @@ $body$
     history: true,
     center: true,
     viewDistance: 30000,
-  // available themes are in /css/theme
-      theme: Reveal.getQueryHash().theme || 'white', 
-    // default/cube/page/concave/zoom/linear/fade/none
-      transition: Reveal.getQueryHash().transition || 'zoom',
+    // available themes are in /css/theme
+    theme: $if(theme)$'$theme$'$else$Reveal.getQueryHash().theme$endif$, // available themes are in /css/theme
+    transition: $if(transition)$'$transition$'$else$Reveal.getQueryHash().transition || 'default'$endif$, // none/fade/slide/convex/concave/zoom
+
+
     // Optional libraries used to extend on reveal.js
   dependencies: [
     { src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },

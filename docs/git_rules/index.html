@@ -15,8 +15,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <link rel="stylesheet" href="../../reveal.js/css/reveal.min.css">
-  <link rel="stylesheet" href="../../reveal.js/css/theme/white.css" id="theme">
-
+  <link rel="stylesheet" href="../../reveal.js/css/theme/solarized.css" id="theme">
+  
 <!-- For syntax highlighting -->
   <link rel="stylesheet" href="../../reveal.js/lib/css/zenburn.css">
 
@@ -107,12 +107,12 @@
 </section><section id="section-3" class="slide level2">
 <h1></h1>
 <figure>
-<img src="img/svn-to-git-1.png" />
+<img src="img/svn-to-git-1.png" alt="" />
 </figure>
 </section><section id="section-4" class="slide level2">
 <h1></h1>
 <figure>
-<img src="img/svn-to-git-2.png" />
+<img src="img/svn-to-git-2.png" alt="" />
 </figure>
 </section><section id="svn---git" class="slide level2">
 <h1>SVN -&gt; Git!</h1>
@@ -220,10 +220,11 @@
     history: true,
     center: true,
     viewDistance: 30000,
-  // available themes are in /css/theme
-      theme: Reveal.getQueryHash().theme || 'white', 
-    // default/cube/page/concave/zoom/linear/fade/none
-      transition: Reveal.getQueryHash().transition || 'zoom',
+    // available themes are in /css/theme
+    theme: 'solarized', // available themes are in /css/theme
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+
     // Optional libraries used to extend on reveal.js
   dependencies: [
     { src: '../../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
