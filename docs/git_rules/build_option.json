@@ -1,0 +1,7 @@
+{
+    "format": "reveal.js",
+    "options": {
+        "theme": "solarized",
+        "transition": "slide"
+    }
+}
