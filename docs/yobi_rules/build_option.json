@@ -1,7 +1,0 @@
-{
-    "format": "reveal.js",
-    "options": {
-        "theme": "league",
-        "transition": "zoom"
-    }
-}
